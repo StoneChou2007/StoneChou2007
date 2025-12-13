@@ -11,54 +11,51 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
+* B.S. in Stony Brook, Stony Brook University, 2024-2027
+* B.S. in Xi'an, China. Xi'an Jiaotong University, 2023-2024
+* High School in Suzhou, China. Suzhou High School, 2022-2023
+
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Fall 2025: Atmospheric Neutrino Reconstruction in Time Projection Chamber
+  * Stony Brook University
+  * Supervisor: Changkee Jung and Ciro Riccio
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2024: DUNE FD3 Photon Detector Upgrade
+  * Stony Brook University
+  * Supervisor: Ciro Riccio
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Fall 2025: Quantum Many-Body Theory and Random Matrix Theory
+  * Stony Brook University
+  * Supervisor: Jacobus Verbaarschot
+
+* Summer 2025:Cryogenic Test of Front-End Motherboards (FEMBs) for DUNE
+  * Brookhaven National Laboratory
+  * Shanshan Gao,Vladimir Tishchenko
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Skills: Mathematica, C++, Fortran, Python, LaTeX, Linux.
+
+* Soccer (Physics department Chairman nominated best player in the physics department)
+  
+* Argentina Tengo(Vice President of Tengo Club in Stony Brook University)
+
+*table tennis
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently NNgroup member in Stony Brook University
