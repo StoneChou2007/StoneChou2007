@@ -14,8 +14,8 @@ main:
   - title: "Talks"
     url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "Physics course"
+    url:/physicscourses/
     
   - title: "Portfolio"
     url: /portfolio/
