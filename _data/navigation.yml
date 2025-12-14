@@ -10,7 +10,7 @@
 main:
 
   - title: "Physics course"
-    url:/physicscourses/
+    url: /physicscourses/
     
   - title: "Portfolio"
     url: /portfolio/
