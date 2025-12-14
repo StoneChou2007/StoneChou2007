@@ -10,14 +10,14 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
+-----
 
 * B.S. in Stony Brook, Stony Brook University, 2024-2027
 * B.S. in Xi'an, China. Xi'an Jiaotong University, 2023-2024
 * High School in Suzhou, China. Suzhou High School, 2022-2023
 
 Research experience
-======
+-----
 * Fall 2025: Atmospheric Neutrino Reconstruction in Time Projection Chamber
   * Stony Brook University
   * Supervisor: Changkee Jung and Ciro Riccio
@@ -35,7 +35,7 @@ Research experience
   * Shanshan Gao,Vladimir Tishchenko
   
 Skills
-======
+-----
 * Programming Skills: Mathematica, C++, Fortran, Python, LaTeX, Linux.
 
 * Soccer (Physics department Chairman nominated best player in the physics department)
@@ -45,15 +45,16 @@ Skills
 *table tennis
 
 Publications
-======
+-----
 
   
 Talks
-======
+-----
 
   
 Teaching
-======
+-----
+Mr. Chow doesn't teach. Mr. Chow regards not teaching a perfection.
 
   
 Service and leadership
