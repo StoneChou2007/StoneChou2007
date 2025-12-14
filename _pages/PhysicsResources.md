@@ -15,3 +15,4 @@ You should find this Page very useful if you are learning or plan to learn these
 
 Resources for Quantum Field Theory：
 
+- [Textbook from Zamolodchikov]({{ '/files/Zamolodchikov_QFTnotes_Part1.pdf' | relative_url }})
