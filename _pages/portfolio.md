@@ -7,8 +7,12 @@ author_profile: true
 
 {% include base_path %}
 ## Golden Hour at SHSSIP
-[![Golden Hour at SHSSIP]({{'/images/goldenhour.png'| relative_url}} )]({{'/portfolio/portfolio-1.md'|relative_url}})
+<img src="{{ '/images/goldenhour.png' | relative_url }}"
+     alt="Golden Hour at SHSSIP"
+     style="width: 80%; height: auto;">
 
 ## Xiaguan Forum and related
-
+<img src="{{ '/images/xiaguan.png' | relative_url }}"
+     alt="Xiaguan Forum and related"
+     style="width: 80%; height: auto;">
 
