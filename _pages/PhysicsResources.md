@@ -76,5 +76,14 @@ I find it particularly useful when I am doing loop correction;
 - Lecture 01: https://vimeo.com/1113307443
 
 ### comments ###
-You should find Peter's notes extremely useful~ and his video ~ For copyright issues i will not publically provide the password to these videos
+You should find Peter's notes extremely useful~ and his video ~ For copyright issues i will not publically provide the password to these videos.
+
+
+
+# Research Projects I am currently working on #
+
+[SYK Model]({{ "/physicscourses/SYKmodel/" | relative_url }})
+
+# Past researches#
+
 
