@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+Here is a much more detailed CV updated till Dec 2025:
+
+- [research CV]({{ '/files/CV_FALL_2025.pdf' | relative_url }})
+
+
 Education
 -----
 
