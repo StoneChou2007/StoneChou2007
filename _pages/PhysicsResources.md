@@ -13,6 +13,8 @@ Quantum Hall Effect, Chern-Simons Theory.
 Now, I am planning to take String Theory Course next semester, and perhaps Solid State Physics and General Relativity, 
 You should find this Page very useful if you are learning or plan to learn these topics.
 
+![my image]({{'/images/t2k.png'|relative_url}})
+
 # Resources for Quantum Field Theory：#
 
 - [Textbook from Zamolodchikov part 1]({{ '/files/Zamolodchikov_QFTnotes_Part1.pdf' | relative_url }})
@@ -35,8 +37,8 @@ I find it particularly useful when I am doing loop correction;
 - [diagrammar]({{ '/files/diagrammar.pdf' | relative_url }})
 
 
+![my image]({{'/images/Weixin Image_2025-10-22_204723_035.jpg'|relative_url}})
 
-![my image]({{'/images/t2k.png'|relative_url}})
 # Resources for Group Representation Theory in Physics #
 
 ### lecture notes ###
