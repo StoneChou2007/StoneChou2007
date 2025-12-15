@@ -36,7 +36,7 @@ I find it particularly useful when I am doing loop correction;
 
 
 
-
+![my image]({{'/images/t2k.png'|relative_url}})
 # Resources for Group Representation Theory in Physics #
 
 ### lecture notes ###
