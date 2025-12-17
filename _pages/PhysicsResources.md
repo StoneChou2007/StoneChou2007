@@ -83,7 +83,9 @@ You should find Peter's notes extremely useful~ and his video ~ For copyright is
 # Research Projects I am currently working on #
 
 [SYK Model]({{ "/physicscourses/SYKmodel/" | relative_url }})
+[Atmospheric Neutrino Reconstruction]({{ "/physicscourses/atmreco/" | relative_url }})
 
 # Past researches#
 
+[FD3 photon detector upgrade]({{ "/physicscourses/pTP/" | relative_url }})
 
