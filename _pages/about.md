@@ -13,7 +13,6 @@ redirect_from:
 
 <div align="center">
 
-# 写给遥远的 Concord 的女孩 #
 
 </div>
 
