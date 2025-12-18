@@ -187,7 +187,8 @@ Skills
   
 * Argentina Tengo(Vice President of Tengo Club in Stony Brook University)
 
-*table tennis
+* Table tennis - [Physics Department Tournament]({{ '/files/pingpong.mp4' | relative_url }})
+
 
 Publications
 -----
