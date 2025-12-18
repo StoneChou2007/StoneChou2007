@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>粒子流动</title>
+  <style>
+    html, body { height:100%; margin:0; overflow:hidden; background:#0b1020; }
+    canvas { display:block; }
+    .tip{
+      position:fixed; left:16px; top:16px;
+      color:#cfe3ff; font:14px system-ui;
+      background:rgba(255,255,255,.06);
+      padding:10px 12px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body>
+  <div class="tip">Canvas 粒子：鼠标靠近会“吸引/扰动”</div>
+  <canvas id="c"></canvas>
+  <script>
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    function resize(){
+      canvas.width = innerWidth * devicePixelRatio;
+      canvas.height = innerHeight * devicePixelRatio;
+      ctx.scale(devicePixelRatio, devicePixelRatio);
+    }
+    resize();
+    addEventListener('resize', () => location.reload());
+
+    const N = 160;
+    const ps = Array.from({length:N}, () => ({
+      x: Math.random()*innerWidth,
+      y: Math.random()*innerHeight,
+      vx: (Math.random()-0.5)*0.8,
+      vy: (Math.random()-0.5)*0.8,
+      r: 1.2 + Math.random()*1.8
+    }));
+
+    let mx = -9999, my = -9999;
+    addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; });
+    addEventListener('mouseleave', () => { mx=-9999; my=-9999; });
+
+    function tick(){
+      ctx.clearRect(0,0,innerWidth,innerHeight);
+
+      // 画连线
+      for(let i=0;i<N;i++){
+        for(let j=i+1;j<N;j++){
+          const dx = ps[i].x-ps[j].x, dy = ps[i].y-ps[j].y;
+          const d2 = dx*dx+dy*dy;
+          if(d2 < 140*140){
+            const a = 1 - Math.sqrt(d2)/140;
+            ctx.globalAlpha = a*0.45;
+            ctx.beginPath();
+            ctx.moveTo(ps[i].x, ps[i].y);
+            ctx.lineTo(ps[j].x, ps[j].y);
+            ctx.strokeStyle = '#7fb6ff';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      for(const p of ps){
+        // 鼠标扰动
+        const dx = mx - p.x, dy = my - p.y;
+        const d = Math.hypot(dx,dy);
+        if(d < 140){
+          p.vx += dx/d * 0.05;
+          p.vy += dy/d * 0.05;
+        }
+
+        p.x += p.vx; p.y += p.vy;
+        p.vx *= 0.98; p.vy *= 0.98;
+
+        if(p.x<0||p.x>innerWidth) p.vx*=-1;
+        if(p.y<0||p.y>innerHeight) p.vy*=-1;
+
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle = '#b8d6ff';
+        ctx.fill();
+      }
+
+      requestAnimationFrame(tick);
+    }
+    tick();
+  </script>
+</body>
+</html>
