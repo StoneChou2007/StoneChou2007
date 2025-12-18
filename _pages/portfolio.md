@@ -13,7 +13,7 @@ author_profile: true
      style="width: 80%; height: auto;">
 
 ## Xiaguan Forum and related
-<a href="{{ '/portfolio/portfolio-2' | relative_url }}">
+<a href="{{ '/portfolio/portfolio3' | relative_url }}">
 <img src="{{ '/images/xiaguan.jpg' | relative_url }}"
      alt="Xiaguan Forum and related"
      style="width: 80%; height: auto;">
