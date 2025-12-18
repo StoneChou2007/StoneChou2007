@@ -2,22 +2,22 @@
 permalink: /
 title: "Lonely Heart Club of Sgt. Pepper"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-S.Chow is Currently in Stony Brook University Preparing for Comps......
-------
+<div align="center">
 
+# 写给遥远的 Concord 的女孩  
+</div>
 
-S.Chow would suggest everyone boring enough to browser this webpage......
-------
+---
 
-to Prepare Comps with him. This winter it would be Classic and Quantum......
-------
+> 你在瓦尔登湖的水面上泛舟 <br>
+> 我在寒冷窗花的木屋里写诗<br><br>
+> 冬天把梭罗摆在荷马的面前 <br>
+> 冻碎了一地的象形文字<br><br>
 
-
-S.Chow would also suggest Professor Snape to stay his nose away from this page......
-------
+---
 
