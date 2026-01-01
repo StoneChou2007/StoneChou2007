@@ -5,5 +5,8 @@ collection: portfolio
 ---
 ![image]({{'/images/utaful.png'|relative_url}})
 
+## A
 
-[波士顿书评文学专栏_2024年夏天到2025年春](https://bostonreviewofbooks.substack.com/p/0d2)
+Angela Li
+---
+一个严肃的中国姑娘，然而她并不是共和国女子，信亚伯拉罕的神，住在梭罗的湖岸，读一卷英文的荷马。
