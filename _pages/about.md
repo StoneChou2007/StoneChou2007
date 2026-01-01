@@ -95,12 +95,7 @@ redirect_from:
 这里放我的文章、项目和一些长期记录。
 </p>
 
-<div class="home-actions">
-  <a class="primary" href="/about/">About</a>
-  <a href="/posts/">Blog</a>
-  <a href="/categories/">Categories</a>
-  <a href="/tags/">Tags</a>
-</div>
+
 
 </div>
 
@@ -112,8 +107,7 @@ redirect_from:
 冬天把梭罗摆在荷马的面前<br>
 冻碎了一地的象形文字
 </blockquote>
-
-令和七年十二月<<i<in<ing<in<i<div class="po
+<div class="poem-footer">— 令和七年十二月</div>
 </div>
 
 <div class="home-grid">
@@ -121,8 +115,11 @@ redirect_from:
 <div class="card">
 
 ### ✉️ 联系我
+
 - 微信：Shssip22233315779
+  
 - 邮箱：sunnystone2007@gmail.com
+  
 
 </div>
 
