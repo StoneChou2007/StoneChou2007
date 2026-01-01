@@ -10,3 +10,9 @@ collection: portfolio
 Angela Li
 ---
 一个严肃的中国姑娘，然而她并不是共和国女子，信亚伯拉罕的神，住在梭罗的湖岸，读一卷英文的荷马。
+
+## C
+
+Changkee Jung
+---
+over-confident and controlling，这是Alo 评价changkee的两个词，很尖锐，但是也很中肯。
