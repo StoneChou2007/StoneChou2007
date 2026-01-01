@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "S.Chow's Webpage"
+title: ""
 author_profile: true
 redirect_from:
   - /about/
