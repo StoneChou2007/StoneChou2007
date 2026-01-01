@@ -18,3 +18,6 @@ author_profile: true
      alt="Xiaguan Forum and related"
      style="width: 80%; height: auto;">
 
+## 佩铂中士的寂寞芳心俱乐部
+[一部未名的词典]({{ '/portfolio/protfolio3' | relative_url }})
+
