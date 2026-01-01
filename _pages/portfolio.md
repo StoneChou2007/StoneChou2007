@@ -19,5 +19,5 @@ author_profile: true
      style="width: 80%; height: auto;">
 
 ## 佩铂中士的寂寞芳心俱乐部
-[一部未名的词典]({{ '/portfolio/protfolio-3' | relative_url }})
+[一部未名的词典]({{ '/portfolio/portfolio-3' | relative_url }})
 
