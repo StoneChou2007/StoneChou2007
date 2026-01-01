@@ -113,25 +113,16 @@ redirect_from:
 冻碎了一地的象形文字
 </blockquote>
 
-<div class="poem-footer">— 你的题记 / 诗句</div>
+令和七年十二月<<i<in<ing<in<i<div class="po
 </div>
 
 <div class="home-grid">
 
 <div class="card">
 
-### 📌 近期在做
-- 桌面终端项目（基于 ECC资料.zip）
-- 嵌入式 / STM32 / 语音模块相关整理
-
-</div>
-
-<div class="card">
-
 ### ✉️ 联系我
-- GitHub：`https://github.com/你的用户名`
-- 邮箱：`you@example.com`
-- 其他：B站 / 知乎 / 公众号（可选）
+- 微信：Shssip22233315779
+- 邮箱：sunnystone2007@gmail.com
 
 </div>
 
@@ -140,7 +131,6 @@ redirect_from:
 ---
 
 #### 你可以从这里开始逛
-- 👉 [最新文章](/posts/)
-- 👉 [所有分类](/categories/)
-- 👉 [所有标签](/tags/)
-- 👉 [关于我](/about/)
+- 👉 [个人简介]({{ '/cv/' | relative_url }})
+- 👉 [往期回顾]({{ '/portfolio/' | relative_url }})
+- 👉 [物理资源](/physicscources/)
