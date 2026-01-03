@@ -88,12 +88,14 @@ redirect_from:
 
 <div class="home-hero" align="center">
 
-<h1>你好，我是 S. Chow</h1>
+<h1>Hi,This is S. Chow</h1>
 
 <p>
 写一点代码，也写一点诗。<br>
-这里放我的文章、项目和一些长期记录。
+这里放我的文章、项目和一些长期记录。 <br>
+  papers,essays,records and projects
 </p>
+
 
 
 
