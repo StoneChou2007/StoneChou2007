@@ -19,5 +19,9 @@ author_profile: true
      style="width: 80%; height: auto;">
 
 ## 佩铂中士的寂寞芳心俱乐部
-[一部未名的词典]({{ '/portfolio/portfolio-3' | relative_url }})
+<a href="{{ '/portfolio/portfolio-3' | relative_url }}">
+<img src="{{ '/images/kyra.jpg' | relative_url }}"
+     alt="Xiaguan Forum and related"
+     style="width: 80%; height: auto;">
+
 
