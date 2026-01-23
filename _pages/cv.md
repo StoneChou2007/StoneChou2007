@@ -197,6 +197,10 @@ Publications
 Talks
 -----
 
+essays
+-----
+ - [Personal Statement for Summer research at PI]({{ '/files/PersonalStatement_PI.pdf' | relative_url }})
+  - [Personal Statement for Summer research at Tokyo]({{ '/files/Personal_Statement_Tokyo_Nuclear_Theory.pdf' | relative_url }})
   
 Teaching
 -----
