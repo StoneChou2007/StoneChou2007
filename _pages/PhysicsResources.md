@@ -120,11 +120,11 @@ Peter Van Nieuwenhuizen's notes and lectures are exceptional resources for this 
 
 ## Research
 
-### Current projects
+### Research statement:
 
-- [**SYK Model**]({{ '/physicscourses/SYKmodel/' | relative_url }})
-- [**Atmospheric Neutrino Reconstruction**]({{ '/physicscourses/atmreco/' | relative_url }})
+As an undergraduate student I had past experience in 
 
 ### Past projects
-
+- [**SYK Model**]({{ '/physicscourses/SYKmodel/' | relative_url }})
+- [**Atmospheric Neutrino Reconstruction**]({{ '/physicscourses/atmreco/' | relative_url }})
 - [**FD3 Photon Detector Upgrade**]({{ '/physicscourses/pTP/' | relative_url }})
