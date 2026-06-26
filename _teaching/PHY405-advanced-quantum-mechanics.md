@@ -1,34 +1,24 @@
 ---
 title: "PHY405: Advanced Quantum Mechanics"
 collection: teaching
-type: "Graduate course"
+type: "UnderGraduate course(Upper division)"
 permalink: /teaching/phy405-advanced-quantum-mechanics
 venue: "Department of Physics and Astronomy"
-date: 2025-09-01
+date: 2026-08-01
 location: ""
 ---
 
-Course page for **PHY405: Advanced Quantum Mechanics**. Notes, problem sets, and
-solutions will be posted here throughout the semester.
+Course page for **PHY405: Advanced Quantum Mechanics**. Notes, problem solutions and office hour will be posted here throughout the semester.
 
 ## Course description
 
-*(Add a short description of the course here — prerequisites, textbook, and the
-topics covered.)*
+*(Advanced Quantum Mechanics)*
 
 ## Topics
 
-- *(e.g.)* Formalism and the Dirac notation
-- Symmetries and conservation laws
-- Time-dependent perturbation theory
-- Scattering theory
-- Relativistic quantum mechanics
-
+- *(e.g.)* 
 ## Lecture notes
-
-*(Link lecture notes here, e.g.:)*
-<!-- - [Lecture 1 notes]({{ '/files/your-file.pdf' | relative_url }}) -->
-
+- not yet
 ## Homework and solutions
 
-*(Link problem sets and solutions here.)*
+- I will record and compile lecture notes for Professor Verbaarschot's lecture. I will post them here as soon as possible after each class and compile into a complete notes. So you are welcome to point out the errors in these notes and contact me.
