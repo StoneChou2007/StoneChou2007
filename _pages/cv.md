@@ -192,6 +192,7 @@ Skills
 
 Publications
 -----
+- [Enhanced Reconstruction of Sub-GeV Neutrinos in LArTPC](https://arxiv.org/pdf/2604.20957)
 
   
 Talks
@@ -204,7 +205,7 @@ essays
   
 Teaching
 -----
-<p class="cv-quote">Mr. Chow doesn't teach. Mr. Chow regards not teaching a perfection.</p>
+<p class="cv-quote"> See in the  teaching section</p>
 
   
 Service and leadership
