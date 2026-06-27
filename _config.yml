@@ -203,7 +203,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   research:
-  output: true
+    output: true
     permalink: /:collection/:path/
     
 
