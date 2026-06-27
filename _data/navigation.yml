@@ -11,6 +11,8 @@ main:
 
   - title: "Physics resource"
     url: /physicscourses/
+  - title: "Research"
+    url: /research/
 
   - title: "Teaching"
     url: /teaching/
