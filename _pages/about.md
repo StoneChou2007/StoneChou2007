@@ -251,7 +251,6 @@ redirect_from:
   </header>
 
   <section class="s-poem">
-    <span class="s-seal">石</span>
     <blockquote>
       你在瓦尔登湖的水面上泛舟<br>
       我在寒冷窗花的木屋里写诗<br>
