@@ -1,61 +1,186 @@
 ---
-title: "佩铂中士的寂寞芳心俱乐部"
-excerpt: "一个记录生活的词典"
-collection: portfolio
+layout: single
+title: "佩铂中士的寂寞芳心俱乐部（一部未名的词典）"
+permalink: /portfolio/portfolio-3/
+author_profile: false
 ---
-![image]({{'/images/utaful.png'|relative_url}})
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
----
-佩铂中士21世纪的文学回忆，对标的当然是米沃什词典。
+{% raw %}
+<style>
+/* ===== S. Chow — password gate (shares home/portfolio tokens) ===== */
+.s-gate{
+  --ink:#23262e; --frost:#3a6ea5; --frost-soft:rgba(58,110,165,.12);
+  --mist:#6b7280; --seal:#bb3b2e; --line:rgba(35,38,46,.10);
+  --radius:18px;
+  max-width:860px;margin:0 auto;
+  font-family:"Inter","Noto Sans SC",system-ui,-apple-system,sans-serif;color:var(--ink);
+}
+.s-gate *{box-sizing:border-box;}
+@keyframes sFadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
 
+.s-lockwrap{display:flex;justify-content:center;padding:1.5rem 0 2.5rem;}
+.s-lockcard{
+  position:relative;width:min(420px,100%);
+  padding:2.2rem 1.8rem 1.9rem;text-align:center;
+  border-radius:var(--radius);border:1px solid var(--line);
+  background:
+    radial-gradient(120% 120% at 0% 0%, var(--frost-soft), transparent 55%),
+    linear-gradient(160deg, rgba(35,38,46,.04), rgba(35,38,46,.012));
+  animation:sFadeUp .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.s-seal{
+  position:absolute;top:1.2rem;right:1.3rem;
+  display:grid;place-items:center;width:42px;height:42px;border-radius:8px;
+  background:var(--seal);color:#fff;
+  font-family:"Noto Serif SC",serif;font-size:1.25rem;font-weight:600;
+  transform:rotate(-4deg);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.35),0 6px 18px -10px rgba(187,59,46,.8);
+  opacity:.92;user-select:none;
+}
+.s-lockicon{
+  display:grid;place-items:center;width:54px;height:54px;margin:0 auto 1rem;
+  border-radius:50%;background:var(--frost-soft);color:var(--frost);
+}
+.s-lockcard h2{
+  margin:0 0 .35rem;font-family:"Noto Serif SC",serif;font-weight:600;
+  font-size:1.4rem;letter-spacing:.04em;color:var(--ink);
+}
+.s-sub{margin:0 0 1.4rem;font-size:.86rem;color:var(--mist);letter-spacing:.02em;}
+.s-field{display:flex;gap:.5rem;}
+.s-field input{
+  flex:1;min-width:0;padding:.65rem .85rem;
+  border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6);
+  font-family:"Inter",sans-serif;font-size:.95rem;color:var(--ink);
+  transition:border-color .18s ease, box-shadow .18s ease;
+}
+.s-field input:focus{
+  outline:none;border-color:var(--frost);
+  box-shadow:0 0 0 3px rgba(58,110,165,.16);
+}
+.s-field button{
+  flex:none;padding:.65rem 1.15rem;border:none;border-radius:10px;cursor:pointer;
+  background:linear-gradient(120deg,var(--frost),#2f5d8c);color:#fff;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.92rem;
+  transition:transform .15s ease, box-shadow .18s ease, opacity .15s ease;
+}
+.s-field button:hover{transform:translateY(-1px);box-shadow:0 10px 24px -12px rgba(47,93,140,.85);}
+.s-field button:disabled{opacity:.6;cursor:progress;transform:none;box-shadow:none;}
+.s-err{margin:.85rem 0 0;font-size:.85rem;color:var(--seal);letter-spacing:.02em;}
 
+/* ===== decrypted content ===== */
+.s-secret{
+  max-width:760px;margin:0 auto;animation:sFadeUp .5s ease both;
+  line-height:1.85;font-size:1.02rem;
+}
+.s-secret h1,.s-secret h2,.s-secret h3{font-family:"Noto Serif SC",serif;font-weight:600;}
+.s-secret img{max-width:100%;height:auto;border-radius:12px;}
+.s-secret blockquote{
+  margin:1.2rem 0;padding:.2rem 0 .2rem 1.2rem;
+  border-left:3px solid var(--frost);font-family:"Noto Serif SC",serif;color:var(--ink);
+}
 
-# A
+@media (prefers-reduced-motion:reduce){
+  .s-lockcard,.s-secret{animation:none;}
+  .s-field input,.s-field button{transition:none;}
+}
+</style>
+{% endraw %}
 
+<div class="s-gate">
 
-ATLAS
----
-Atlas,地图册，当然这不是一个很准确的翻译。我已经忘记第一次认识这个词语的时候我在读博尔赫斯还是微分几何，或者那时我又在读博尔赫斯又在读黎曼？听起来像是他小说里面的超现实组合，或者一个关于流形的梦境。唯一的共性是以上的atlas都属于20世纪，陈旧的工业时代的疯狂属性。千禧年之后拜托了cern，atlas又有了新的含义——后现代的金字塔——altas detector，起着和金字塔一样的作用——祭祀和预言——在新的千禧年我们习惯叫它物理。  
+  <section id="s-lock" class="s-lockwrap">
+    <div class="s-lockcard">
+      <span class="s-seal">石</span>
+      <div class="s-lockicon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10.5" width="16" height="10" rx="2"></rect>
+          <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"></path>
+        </svg>
+      </div>
+      <h2>这一页上了锁</h2>
+      <p class="s-sub">输入密码以阅读 · enter the password to read</p>
+      <div class="s-field">
+        <input id="s-pw" type="password" autocomplete="off" spellcheck="false"
+               placeholder="密码 / password" autofocus>
+        <button id="s-go" type="button">解锁</button>
+      </div>
+      <p id="s-err" class="s-err" hidden>密码不正确，再试一次。</p>
+    </div>
+  </section>
 
+  <article id="s-secret" class="s-secret" hidden></article>
 
-Angela Li
----
-一个严肃的中国姑娘，然而她并不是共和国女子，信亚伯拉罕的神。住在梭罗的湖岸，读一卷英文的荷马。
+</div>
 
+{% raw %}
+<script>
+(function(){
+  // Filled in by encrypt_page.py — repo holds only ciphertext, never the text.
+  var ENC = { salt:"__ENC_SALT__", iv:"__ENC_IV__", ct:"__ENC_CT__", iterations:__ENC_ITER__ };
+  var SESSION_KEY = "s-pw-portfolio-3"; // remembers the password for this tab only
 
-# B
+  var $lock   = document.getElementById("s-lock");
+  var $secret = document.getElementById("s-secret");
+  var $pw     = document.getElementById("s-pw");
+  var $go     = document.getElementById("s-go");
+  var $err    = document.getElementById("s-err");
 
-Barry Barish
----
-2024年秋天我一个人来到纽约长岛，第一个学期种种原因没有选上合适的专业课，旁听了一节Barry barish给本科生的“Special Topic in Physics”，在那节课上认识了Charles以及第二个学期就离开的南京大学的苏铭洋，第二年又在这节课上认识Angela，真是世事难料。Barry来上这节课完全是changkee的意思，我也是在这节课上第一次看到changkee，这是在2024年秋天的事了，想起来的时候，许多时刻依然历历在目。当时对物理学以及自己的前路也真是无知，然而认识这么多人这么多事来，我心里是感到可喜的。彼时苏铭洋在课上提的那些问题，做的那些presentation，使我知做物理的一流人物可以这样，不只是Barry的课。而之后想不到和Charles那样熟起来，真是要感谢当时懵懂无知的我有心气想上那样的课来。
+  function b64ToBytes(b64){
+    var bin = atob(b64), out = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
 
+  async function decrypt(password){
+    var baseKey = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(password),
+      {name:"PBKDF2"}, false, ["deriveKey"]
+    );
+    var key = await crypto.subtle.deriveKey(
+      {name:"PBKDF2", salt:b64ToBytes(ENC.salt), iterations:ENC.iterations, hash:"SHA-256"},
+      baseKey, {name:"AES-GCM", length:256}, false, ["decrypt"]
+    );
+    var buf = await crypto.subtle.decrypt(
+      {name:"AES-GCM", iv:b64ToBytes(ENC.iv)}, key, b64ToBytes(ENC.ct)
+    );
+    return new TextDecoder().decode(buf); // throws if password is wrong
+  }
 
+  function setBusy(b){
+    $go.disabled = b;
+    $go.textContent = b ? "解锁中…" : "解锁";
+  }
 
+  async function unlock(password, silent){
+    if(!password) return;
+    setBusy(true); $err.hidden = true;
+    try{
+      var html = await decrypt(password);
+      $secret.innerHTML = html;
+      $lock.hidden = true;
+      $secret.hidden = false;
+      try{ sessionStorage.setItem(SESSION_KEY, password); }catch(e){}
+    }catch(e){
+      try{ sessionStorage.removeItem(SESSION_KEY); }catch(_){}
+      if(!silent){ $err.hidden = false; $pw.select(); }
+    }finally{
+      setBusy(false);
+    }
+  }
 
-# C
+  $go.addEventListener("click", function(){ unlock($pw.value, false); });
+  $pw.addEventListener("keydown", function(e){ if(e.key === "Enter") unlock($pw.value, false); });
 
-Changkee Jung
----
-over-confident and controlling，这是Alo 评价changkee的两个词，很尖锐，但是也很中肯。几乎肯定的是对这种品质的obsession我在实验物理又多待了一年，并且他也成为了我的supervisor。要不是他，我心里面的巴枯宁或者沙文主义或者不会这么快被唤醒。
-
-
-# F
-
-Friends
----
-我是在西安那一年开始看老友记，其时和Skyler还有联系，我们想过要有我们自己的六人组。当然了，像老友记那样的友谊实在太遥不可及了。
-
-
-
-
-
-# L
-
-令和
----
-令和7年，新的称呼2025年的方案，在一封写给kittymu的信里面我第一次propose，不过，在那之后，我也没有把这个想法和别人说。令人感到欣慰的是我在与时间角力的过程中终于找到了一个平衡点，我是说，在这么多事情之后。一个流亡者，按照Brodsky的说法，是一颗浮起的橡实，而这颗橡实竟然能想出自己的纪年，对抗陇头的流水，真是飘然旷野亦可以不做流离山下之想了。15岁的时候在敦煌，我提出与时间角力这样一个题目来，然而这题目沉重，不是我现在的生活只如流水汤汤，日子好长。之后是西安的苦闷的日子，海子的诗，灞陵的流水，富士山的云白的那样本色。我怀念富士的云。
-
+  // auto-unlock if this tab already entered the password
+  var saved = null;
+  try{ saved = sessionStorage.getItem(SESSION_KEY); }catch(e){}
+  if(saved){ unlock(saved, true); }
+})();
+</script>
+{% endraw %}
 
 
 
