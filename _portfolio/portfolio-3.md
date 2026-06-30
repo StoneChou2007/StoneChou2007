@@ -180,6 +180,133 @@ author_profile: false
   if(saved){ unlock(saved, true); }
 })();
 </script>
+{% endraw %}  font-family:"Inter",sans-serif;font-size:.95rem;color:var(--ink);
+  transition:border-color .18s ease, box-shadow .18s ease;
+}
+.s-field input:focus{
+  outline:none;border-color:var(--frost);
+  box-shadow:0 0 0 3px rgba(58,110,165,.16);
+}
+.s-field button{
+  flex:none;padding:.65rem 1.15rem;border:none;border-radius:10px;cursor:pointer;
+  background:linear-gradient(120deg,var(--frost),#2f5d8c);color:#fff;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.92rem;
+  transition:transform .15s ease, box-shadow .18s ease, opacity .15s ease;
+}
+.s-field button:hover{transform:translateY(-1px);box-shadow:0 10px 24px -12px rgba(47,93,140,.85);}
+.s-field button:disabled{opacity:.6;cursor:progress;transform:none;box-shadow:none;}
+.s-err{margin:.85rem 0 0;font-size:.85rem;color:var(--seal);letter-spacing:.02em;}
+
+/* ===== decrypted content ===== */
+.s-secret{
+  max-width:760px;margin:0 auto;animation:sFadeUp .5s ease both;
+  line-height:1.85;font-size:1.02rem;
+}
+.s-secret h1,.s-secret h2,.s-secret h3{font-family:"Noto Serif SC",serif;font-weight:600;}
+.s-secret img{max-width:100%;height:auto;border-radius:12px;}
+.s-secret blockquote{
+  margin:1.2rem 0;padding:.2rem 0 .2rem 1.2rem;
+  border-left:3px solid var(--frost);font-family:"Noto Serif SC",serif;color:var(--ink);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .s-lockcard,.s-secret{animation:none;}
+  .s-field input,.s-field button{transition:none;}
+}
+</style>
+{% endraw %}
+
+<div class="s-gate">
+
+  <section id="s-lock" class="s-lockwrap">
+    <div class="s-lockcard">
+      <div class="s-lockicon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10.5" width="16" height="10" rx="2"></rect>
+          <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"></path>
+        </svg>
+      </div>
+      <h2>这一页上了锁</h2>
+      <p class="s-sub">输入密码以阅读 · enter the password to read</p>
+      <div class="s-field">
+        <input id="s-pw" type="password" autocomplete="off" spellcheck="false"
+               placeholder="密码 / password" autofocus>
+        <button id="s-go" type="button">解锁</button>
+      </div>
+      <p id="s-err" class="s-err" hidden>密码不正确，再试一次。</p>
+    </div>
+  </section>
+
+  <article id="s-secret" class="s-secret" hidden></article>
+
+</div>
+
+{% raw %}
+<script>
+(function(){
+  // Filled in by encrypt_page.py — repo holds only ciphertext, never the text.
+  var ENC = { salt:"__ENC_SALT__", iv:"__ENC_IV__", ct:"__ENC_CT__", iterations:__ENC_ITER__ };
+  var SESSION_KEY = "s-pw-portfolio-3"; // remembers the password for this tab only
+
+  var $lock   = document.getElementById("s-lock");
+  var $secret = document.getElementById("s-secret");
+  var $pw     = document.getElementById("s-pw");
+  var $go     = document.getElementById("s-go");
+  var $err    = document.getElementById("s-err");
+
+  function b64ToBytes(b64){
+    var bin = atob(b64), out = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  async function decrypt(password){
+    var baseKey = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(password),
+      {name:"PBKDF2"}, false, ["deriveKey"]
+    );
+    var key = await crypto.subtle.deriveKey(
+      {name:"PBKDF2", salt:b64ToBytes(ENC.salt), iterations:ENC.iterations, hash:"SHA-256"},
+      baseKey, {name:"AES-GCM", length:256}, false, ["decrypt"]
+    );
+    var buf = await crypto.subtle.decrypt(
+      {name:"AES-GCM", iv:b64ToBytes(ENC.iv)}, key, b64ToBytes(ENC.ct)
+    );
+    return new TextDecoder().decode(buf); // throws if password is wrong
+  }
+
+  function setBusy(b){
+    $go.disabled = b;
+    $go.textContent = b ? "解锁中…" : "解锁";
+  }
+
+  async function unlock(password, silent){
+    if(!password) return;
+    setBusy(true); $err.hidden = true;
+    try{
+      var html = await decrypt(password);
+      $secret.innerHTML = html;
+      $lock.hidden = true;
+      $secret.hidden = false;
+      try{ sessionStorage.setItem(SESSION_KEY, password); }catch(e){}
+    }catch(e){
+      try{ sessionStorage.removeItem(SESSION_KEY); }catch(_){}
+      if(!silent){ $err.hidden = false; $pw.select(); }
+    }finally{
+      setBusy(false);
+    }
+  }
+
+  $go.addEventListener("click", function(){ unlock($pw.value, false); });
+  $pw.addEventListener("keydown", function(e){ if(e.key === "Enter") unlock($pw.value, false); });
+
+  // auto-unlock if this tab already entered the password
+  var saved = null;
+  try{ saved = sessionStorage.getItem(SESSION_KEY); }catch(e){}
+  if(saved){ unlock(saved, true); }
+})();
+</script>
 {% endraw %}
 
 
