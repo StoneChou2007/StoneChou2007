@@ -1,1 +1,339 @@
+<!-- ---
+layout: single
+title: "佩铂中士的寂寞芳心俱乐部（一部未名的词典）"
+<!-- permalink: /portfolio/portfolio-31/ -->
+author_profile: false
+---
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+{% raw %}
+<style>
+/* ===== S. Chow — password gate (shares home/portfolio tokens) ===== */
+.s-gate{
+  --ink:#23262e; --frost:#3a6ea5; --frost-soft:rgba(58,110,165,.12);
+  --mist:#6b7280; --seal:#bb3b2e; --line:rgba(35,38,46,.10);
+  --radius:18px;
+  max-width:860px;margin:0 auto;
+  font-family:"Inter","Noto Sans SC",system-ui,-apple-system,sans-serif;color:var(--ink);
+}
+.s-gate *{box-sizing:border-box;}
+@keyframes sFadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+
+.s-lockwrap{display:flex;justify-content:center;padding:1.5rem 0 2.5rem;}
+.s-lockcard{
+  position:relative;width:min(420px,100%);
+  padding:2.2rem 1.8rem 1.9rem;text-align:center;
+  border-radius:var(--radius);border:1px solid var(--line);
+  background:
+    radial-gradient(120% 120% at 0% 0%, var(--frost-soft), transparent 55%),
+    linear-gradient(160deg, rgba(35,38,46,.04), rgba(35,38,46,.012));
+  animation:sFadeUp .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.s-seal{
+  position:absolute;top:1.2rem;right:1.3rem;
+  display:grid;place-items:center;width:42px;height:42px;border-radius:8px;
+  background:var(--seal);color:#fff;
+  font-family:"Noto Serif SC",serif;font-size:1.25rem;font-weight:600;
+  transform:rotate(-4deg);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.35),0 6px 18px -10px rgba(187,59,46,.8);
+  opacity:.92;user-select:none;
+}
+.s-lockicon{
+  display:grid;place-items:center;width:54px;height:54px;margin:0 auto 1rem;
+  border-radius:50%;background:var(--frost-soft);color:var(--frost);
+}
+.s-lockcard h2{
+  margin:0 0 .35rem;font-family:"Noto Serif SC",serif;font-weight:600;
+  font-size:1.4rem;letter-spacing:.04em;color:var(--ink);
+}
+.s-sub{margin:0 0 1.4rem;font-size:.86rem;color:var(--mist);letter-spacing:.02em;}
+.s-field{display:flex;gap:.5rem;}
+.s-field input{
+  flex:1;min-width:0;padding:.65rem .85rem;
+  border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6);
+  font-family:"Inter",sans-serif;font-size:.95rem;color:var(--ink);
+  transition:border-color .18s ease, box-shadow .18s ease;
+}
+.s-field input:focus{
+  outline:none;border-color:var(--frost);
+  box-shadow:0 0 0 3px rgba(58,110,165,.16);
+}
+.s-field button{
+  flex:none;padding:.65rem 1.15rem;border:none;border-radius:10px;cursor:pointer;
+  background:linear-gradient(120deg,var(--frost),#2f5d8c);color:#fff;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.92rem;
+  transition:transform .15s ease, box-shadow .18s ease, opacity .15s ease;
+}
+.s-field button:hover{transform:translateY(-1px);box-shadow:0 10px 24px -12px rgba(47,93,140,.85);}
+.s-field button:disabled{opacity:.6;cursor:progress;transform:none;box-shadow:none;}
+.s-err{margin:.85rem 0 0;font-size:.85rem;color:var(--seal);letter-spacing:.02em;}
+
+/* ===== decrypted content ===== */
+.s-secret{
+  max-width:760px;margin:0 auto;animation:sFadeUp .5s ease both;
+  line-height:1.85;font-size:1.02rem;
+}
+.s-secret h1,.s-secret h2,.s-secret h3{font-family:"Noto Serif SC",serif;font-weight:600;}
+.s-secret img{max-width:100%;height:auto;border-radius:12px;}
+.s-secret blockquote{
+  margin:1.2rem 0;padding:.2rem 0 .2rem 1.2rem;
+  border-left:3px solid var(--frost);font-family:"Noto Serif SC",serif;color:var(--ink);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .s-lockcard,.s-secret{animation:none;}
+  .s-field input,.s-field button{transition:none;}
+}
+</style>
+{% endraw %}
+
+<div class="s-gate">
+
+  <section id="s-lock" class="s-lockwrap">
+    <div class="s-lockcard">
+      <span class="s-seal">石</span>
+      <div class="s-lockicon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10.5" width="16" height="10" rx="2"></rect>
+          <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"></path>
+        </svg>
+      </div>
+      <h2>这一页上了锁</h2>
+      <p class="s-sub">输入密码以阅读 · enter the password to read</p>
+      <div class="s-field">
+        <input id="s-pw" type="password" autocomplete="off" spellcheck="false"
+               placeholder="密码 / password" autofocus>
+        <button id="s-go" type="button">解锁</button>
+      </div>
+      <p id="s-err" class="s-err" hidden>密码不正确，再试一次。</p>
+    </div>
+  </section>
+
+  <article id="s-secret" class="s-secret" hidden></article>
+
+</div>
+
+{% raw %}
+<script>
+(function(){
+  // Filled in by encrypt_page.py — repo holds only ciphertext, never the text.
+  var ENC = { salt:"__ENC_SALT__", iv:"__ENC_IV__", ct:"__ENC_CT__", iterations:__ENC_ITER__ };
+  var SESSION_KEY = "s-pw-portfolio-3"; // remembers the password for this tab only
+
+  var $lock   = document.getElementById("s-lock");
+  var $secret = document.getElementById("s-secret");
+  var $pw     = document.getElementById("s-pw");
+  var $go     = document.getElementById("s-go");
+  var $err    = document.getElementById("s-err");
+
+  function b64ToBytes(b64){
+    var bin = atob(b64), out = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  async function decrypt(password){
+    var baseKey = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(password),
+      {name:"PBKDF2"}, false, ["deriveKey"]
+    );
+    var key = await crypto.subtle.deriveKey(
+      {name:"PBKDF2", salt:b64ToBytes(ENC.salt), iterations:ENC.iterations, hash:"SHA-256"},
+      baseKey, {name:"AES-GCM", length:256}, false, ["decrypt"]
+    );
+    var buf = await crypto.subtle.decrypt(
+      {name:"AES-GCM", iv:b64ToBytes(ENC.iv)}, key, b64ToBytes(ENC.ct)
+    );
+    return new TextDecoder().decode(buf); // throws if password is wrong
+  }
+
+  function setBusy(b){
+    $go.disabled = b;
+    $go.textContent = b ? "解锁中…" : "解锁";
+  }
+
+  async function unlock(password, silent){
+    if(!password) return;
+    setBusy(true); $err.hidden = true;
+    try{
+      var html = await decrypt(password);
+      $secret.innerHTML = html;
+      $lock.hidden = true;
+      $secret.hidden = false;
+      try{ sessionStorage.setItem(SESSION_KEY, password); }catch(e){}
+    }catch(e){
+      try{ sessionStorage.removeItem(SESSION_KEY); }catch(_){}
+      if(!silent){ $err.hidden = false; $pw.select(); }
+    }finally{
+      setBusy(false);
+    }
+  }
+
+  $go.addEventListener("click", function(){ unlock($pw.value, false); });
+  $pw.addEventListener("keydown", function(e){ if(e.key === "Enter") unlock($pw.value, false); });
+
+  // auto-unlock if this tab already entered the password
+  var saved = null;
+  try{ saved = sessionStorage.getItem(SESSION_KEY); }catch(e){}
+  if(saved){ unlock(saved, true); }
+})();
+</script>
+{% endraw %}  font-family:"Inter",sans-serif;font-size:.95rem;color:var(--ink);
+  transition:border-color .18s ease, box-shadow .18s ease;
+}
+.s-field input:focus{
+  outline:none;border-color:var(--frost);
+  box-shadow:0 0 0 3px rgba(58,110,165,.16);
+}
+.s-field button{
+  flex:none;padding:.65rem 1.15rem;border:none;border-radius:10px;cursor:pointer;
+  background:linear-gradient(120deg,var(--frost),#2f5d8c);color:#fff;
+  font-family:"Inter",sans-serif;font-weight:600;font-size:.92rem;
+  transition:transform .15s ease, box-shadow .18s ease, opacity .15s ease;
+}
+.s-field button:hover{transform:translateY(-1px);box-shadow:0 10px 24px -12px rgba(47,93,140,.85);}
+.s-field button:disabled{opacity:.6;cursor:progress;transform:none;box-shadow:none;}
+.s-err{margin:.85rem 0 0;font-size:.85rem;color:var(--seal);letter-spacing:.02em;}
+
+/* ===== decrypted content ===== */
+.s-secret{
+  max-width:760px;margin:0 auto;animation:sFadeUp .5s ease both;
+  line-height:1.85;font-size:1.02rem;
+}
+.s-secret h1,.s-secret h2,.s-secret h3{font-family:"Noto Serif SC",serif;font-weight:600;}
+.s-secret img{max-width:100%;height:auto;border-radius:12px;}
+.s-secret blockquote{
+  margin:1.2rem 0;padding:.2rem 0 .2rem 1.2rem;
+  border-left:3px solid var(--frost);font-family:"Noto Serif SC",serif;color:var(--ink);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .s-lockcard,.s-secret{animation:none;}
+  .s-field input,.s-field button{transition:none;}
+}
+</style>
+{% endraw %}
+
+<div class="s-gate">
+
+  <section id="s-lock" class="s-lockwrap">
+    <div class="s-lockcard">
+      <div class="s-lockicon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10.5" width="16" height="10" rx="2"></rect>
+          <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"></path>
+        </svg>
+      </div>
+      <h2>这一页上了锁</h2>
+      <p class="s-sub">输入密码以阅读 · enter the password to read</p>
+      <div class="s-field">
+        <input id="s-pw" type="password" autocomplete="off" spellcheck="false"
+               placeholder="密码 / password" autofocus>
+        <button id="s-go" type="button">解锁</button>
+      </div>
+      <p id="s-err" class="s-err" hidden>密码不正确，再试一次。</p>
+    </div>
+  </section>
+
+  <article id="s-secret" class="s-secret" hidden></article>
+
+</div>
+
+{% raw %}
+<script>
+(function(){
+  // Filled in by encrypt_page.py — repo holds only ciphertext, never the text.
+  var ENC = { salt:"__ENC_SALT__", iv:"__ENC_IV__", ct:"__ENC_CT__", iterations:__ENC_ITER__ };
+  var SESSION_KEY = "s-pw-portfolio-3"; // remembers the password for this tab only
+
+  var $lock   = document.getElementById("s-lock");
+  var $secret = document.getElementById("s-secret");
+  var $pw     = document.getElementById("s-pw");
+  var $go     = document.getElementById("s-go");
+  var $err    = document.getElementById("s-err");
+
+  function b64ToBytes(b64){
+    var bin = atob(b64), out = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  async function decrypt(password){
+    var baseKey = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(password),
+      {name:"PBKDF2"}, false, ["deriveKey"]
+    );
+    var key = await crypto.subtle.deriveKey(
+      {name:"PBKDF2", salt:b64ToBytes(ENC.salt), iterations:ENC.iterations, hash:"SHA-256"},
+      baseKey, {name:"AES-GCM", length:256}, false, ["decrypt"]
+    );
+    var buf = await crypto.subtle.decrypt(
+      {name:"AES-GCM", iv:b64ToBytes(ENC.iv)}, key, b64ToBytes(ENC.ct)
+    );
+    return new TextDecoder().decode(buf); // throws if password is wrong
+  }
+
+  function setBusy(b){
+    $go.disabled = b;
+    $go.textContent = b ? "解锁中…" : "解锁";
+  }
+
+  async function unlock(password, silent){
+    if(!password) return;
+    setBusy(true); $err.hidden = true;
+    try{
+      var html = await decrypt(password);
+      $secret.innerHTML = html;
+      $lock.hidden = true;
+      $secret.hidden = false;
+      try{ sessionStorage.setItem(SESSION_KEY, password); }catch(e){}
+    }catch(e){
+      try{ sessionStorage.removeItem(SESSION_KEY); }catch(_){}
+      if(!silent){ $err.hidden = false; $pw.select(); }
+    }finally{
+      setBusy(false);
+    }
+  }
+
+  $go.addEventListener("click", function(){ unlock($pw.value, false); });
+  $pw.addEventListener("keydown", function(e){ if(e.key === "Enter") unlock($pw.value, false); });
+
+  // auto-unlock if this tab already entered the password
+  var saved = null;
+  try{ saved = sessionStorage.getItem(SESSION_KEY); }catch(e){}
+  if(saved){ unlock(saved, true); }
+})();
+</script>
+{% endraw %}
+
+
+
+# M
+
+murder
+---
+谋死几乎是和自死一样自然的事情，莫种意义上说，所有的自死都是谋死。死者远去，并且给每一个生者留下巨大的石头，那块石头他们像西西弗斯那样一天天推上死的山上去，然而我们遗忘，像查拉图斯特拉那样，从那山上没落。
+
+# P
+
+Pepsi
+---
+Never Ever Buy That.
+
+
+
+# S
+
+Spasmodic
+---
+
+又一个15岁的回忆碎片，一个我几乎没有花费精力就记住的英语单词。那一年少年班的同学大都沉迷在音乐游戏，这个名单里面包括祝子尧，苗晋硕，方亦成，金天等等。spasmodic是游戏里面一首电音的名字。电音而已，并不是音乐。
+
+Spring
+---
+
+春天啊，春天是我的品质。
+ -->
